@@ -1,0 +1,202 @@
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:500}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}
+
+html,body {height: 100%;}
+h1,h2,h3,h4,h5,h6,h7,h8,h9,strong {font-weight: 500;}
+
+/* Layout */
+.panel {
+    min-height: 100vh;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 2em ;
+}
+.table {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.table-row {
+    display: table-row;
+    height: 100%;
+    width: 100%;
+}
+.table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+.inline {
+    display: inline-block;
+}
+
+/* Style Guide Only */
+.panel {
+    background: hsl(240, 2%, 91%);
+}
+.panel.one {
+    text-align: center;
+    height: 100%;
+}
+.panel.one h1 {
+    margin: 0;
+}
+
+/* Typography */
+body {
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    font-size: 1.8vw;
+    line-height: 1.2;
+}
+.small {
+    font-size: 0.9em;
+    font-size: 1.3vw;
+}
+.base {
+    font-size: 18px;
+    font-size: 1.8vw;
+}
+.medium,
+h4 {
+    font-size: 1.2em;
+    font-size: 2vw;
+}
+.large,
+h3 {
+    font-size: 1.6em;
+    font-size: 2.9vw;
+}
+.xlarge,
+h2 {
+    font-size: 2.7em;
+    font-size: 3.4vw;
+}
+.xxlarge,
+h1 {
+    font-size: 1.6em;
+    font-size: 4.2vw;
+}
+.huge {
+    font-size: 2.4em;
+    font-size: 5.1vw;
+}
+p {
+    margin-bottom: 1em;
+    line-height: 1.5;
+}
+.title {
+    margin: 0.2em 0;
+}
+.light {
+    font-weight: 300;
+}
+.bold {
+    font-weight: 500;
+}
+.italic {
+    font-style: italic;
+}
+.underline {
+    text-decoration: underline;
+}
+.strike {
+    text-decoration: line-through;
+}
+.soft {
+    opacity: 0.39;
+}
+
+/* Lists */
+ul {
+    list-style: circle;
+    padding: 0.4em 0 0.4em 1.7em;
+}
+ol {
+    padding: 0.4em 0 0.4em 1.7em;
+}
+ul.structural,
+ol.structural {
+    list-style: none;
+    padding: 1.3rem 0 0;
+}
+ul.structural > li,
+ol.structural > li {
+    margin: 2.5rem 0
+}
+ul.structural > li:before,
+ul.structural > li:after,
+ol.structural > li:before,
+ol.structural > li:after,
+ul.thumbnails,
+ul.thumbnails,
+ol.thumbnails,
+ol.thumbnails {
+    content: " ";
+    display: table;
+}
+ul.structural > li:after {
+    clear: both;
+}
+ul.thumbnails {
+    padding: 0;
+    list-style: none;
+}
+ul.thumbnails > li {
+    margin: 0 0.74em 0.74em 0;
+    float: left;
+}
+ul.thumbnails.nolinks > li,
+ul.thumbnails > li > a {
+    padding: 0.74em;
+    background: white;
+    border-radius: 0.2em;
+    display: block;
+}
+.thumb {
+    position: relative;
+}
+.thumb img {
+    max-width: 15vw;
+}
+.caption.over {
+    position: absolute;
+    bottom: 0.37em;
+    left: 0.37em;
+}
+.caption.top {
+    margin-bottom: 0.1em;
+}
+.caption.bottom {
+    margin-top: 0.1em;
+}
+
+/* Colors */
+body {
+    color: #222;
+}
+hr {
+    border-color: #666;
+}
+.square {
+    width: 15vw;
+    height: 15vw;
+}
+.black {
+    background: #000;
+}
+.blue {
+    background: hsl(207, 100%, 33%);
+}
+.dark.blue {
+    background: hsl(209, 100%, 18%);
+}
+.light.blue {
+    background: hsl(217, 35%, 80%);
+}
+.gray {
+    background: hsl(240, 2%, 91%);
+}
+.inverse {
+    color: #eee;
+}
+
